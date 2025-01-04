@@ -1,0 +1,189 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #004b23; /* Primary Background Color */
+    color: #ccff33; /* Light Text Color */
+    line-height: 1.5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+}
+
+.container {
+    width: 100%;
+    max-width: 400px;
+    height: 100vh; /* Full Page Height */
+    background-color: #70e000; /* Lighter Background Color */
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Wallet Overview Section */
+.wallet-overview {
+    text-align: center;
+    padding: 20px;
+    background-color: #9ef01a; /* Accent Background */
+    color: #004b23; /* Dark Text */
+}
+
+.wallet-name {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.wallet-balance {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+/* Action Buttons Section */
+.actions {
+    display: flex;
+    justify-content: space-around;
+    padding: 15px;
+    background-color: #007200; /* Button Background */
+    border-top: 1px solid #004b23;
+    border-bottom: 1px solid #004b23;
+}
+
+.actions button {
+    background-color: #ccff33; /* Button Color */
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    color: #004b23; /* Dark Text */
+    font-size: 14px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.actions button:hover {
+    background-color: #9ef01a; /* Hover Color */
+}
+
+/* Crypto Section */
+.crypto-section {
+    padding: 15px;
+    flex: 1;
+    overflow-y: auto;
+}
+
+.crypto-tabs {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 15px;
+}
+
+.crypto-tabs button {
+    background: none;
+    border: none;
+    color: #006400ef; /* Light Text */
+    padding: 5px 10px;
+    font-size: 14px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.crypto-tabs .active {
+    border-bottom: 2px solid #70e000; /* Tab Highlight */
+}
+
+.crypto-list {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.crypto-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #006400; /* Item Background */
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.crypto-item img {
+    width: 30px;
+    height: 30px;
+}
+
+.crypto-name {
+    flex: 1;
+    margin-left: 10px;
+    color: #ccff33; /* Light Text */
+}
+
+.crypto-price {
+    font-weight: bold;
+    color: #ccff33; /* Light Text */
+}
+
+.crypto-change {
+    font-size: 12px;
+}
+
+.crypto-change.negative {
+    color: #e74c3c;
+}
+
+.crypto-change.positive {
+    color: #2ecc71;
+}
+
+/* Footer Navigation Section */
+.footer {
+    background-color: #007200; /* Footer Background */
+    padding: 10px 0;
+    border-top: 1px solid #004b23;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    max-width: 400px;
+}
+
+.footer nav {
+    display: flex;
+    justify-content: space-around;
+}
+
+.footer a {
+    text-decoration: none;
+    color: #ccff33; /* Light Text */
+    font-size: 14px;
+    transition: color 0.15s;
+}
+
+.footer a.active {
+    color: #70e000; /* Active Link Color */
+}
+
+.footer a:hover {
+    color: #b1df68; /* Hover Link Color */
+}
+/* Security Icon Styling */
+.wallet-header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.security-icon {
+    color: #004b23; /* Darker shade from the palette */
+    font-size: 20px;
+    margin-right: 15px;
+}
+

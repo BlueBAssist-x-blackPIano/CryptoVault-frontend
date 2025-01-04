@@ -1,0 +1,110 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: rgb(30, 30, 28); /* Wallet Background Color */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+}
+
+/* Profile Container */
+.profile-container {
+    background-color: #000000b7; /* Container Background */
+    width: 100%;
+    max-width: 400px;
+    height: calc(100vh - 50px); /* Full Page Height Minus Footer */
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+/* Profile Icon */
+.profile-icon {
+    font-size: 80px;
+    color: #06b856df; /* Accent Color */
+    margin-bottom: 20px;
+}
+
+/* Profile Name */
+.profile-name {
+    color: #06b856df; /* Text Color */
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+
+/* Profile Details */
+.profile-details p {
+    color: rgba(255, 255, 255, 0.764); /* Secondary Text Color */
+    margin-bottom: 10px;
+    font-size: 14px;
+}
+
+/* Logout Button */
+.logout-btn {
+    background-color: #06b856df; /* Button Background */
+    color: white;
+    font-family: Roboto, sans-serif;
+    font-size: 16px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    box-shadow: 0px 5px 9px rgba(64, 226, 36, 0.384);
+    transition: all 0.2s ease;
+    margin-top: 10px; /* Push Logout Button to Bottom */
+    width: 100%;
+}
+
+.logout-btn:hover {
+    opacity: 0.8;
+    box-shadow: 0px 5px 9px rgba(0, 0, 0, 0.384);
+}
+
+.logout-btn:active {
+    opacity: 0.9;
+}
+
+/* Footer */
+.footer {
+    background-color: #007200; /* Footer Background */
+    padding: 10px 0;
+    border-top: 1px solid #004b23;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    max-width: 400px;
+}
+
+.footer nav {
+    display: flex;
+    justify-content: space-around;
+}
+
+.footer a {
+    text-decoration: none;
+    color: #ccff33; /* Light Text */
+    font-size: 14px;
+    transition: color 0.15s;
+}
+
+.footer a.active {
+    color: #70e000; /* Active Link Color */
+}
+
+.footer a:hover {
+    color: #b1df68; /* Hover Link Color */
+}

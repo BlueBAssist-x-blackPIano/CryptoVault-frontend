@@ -1,0 +1,128 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #004b23; /* Primary Background Color */
+    color: #ccff33; /* Light Text Color */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+/* Main Container */
+.container {
+    width: 100%;
+    max-width: 400px;
+    background-color: #70e000; /* Lighter Background Color */
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    margin-bottom: 60px; /* Leave space for the footer */
+}
+
+/* Header Section */
+.header {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    color: #004b23; /* Dark Text */
+    margin-bottom: 20px;
+}
+
+.back-icon {
+    font-size: 20px;
+    cursor: pointer;
+    color: white;
+}
+
+.back-icon, .fa-angle-left {
+    font-size: 1.2rem;
+    color: black; /* Ensures arrow is visible */
+    cursor: pointer;
+}
+
+.back-icon:hover, .fa-angle-left:hover {
+    color: #062307; /* Light green on hover */
+}
+
+.header h1 {
+    font-size: 22px;
+    font-weight: bold;
+}
+
+/* FAQ Section */
+.faq-section {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.faq-item {
+    background-color: #006400; /* Item Background */
+    padding: 15px;
+    border-radius: 8px;
+    color: #ccff33; /* Light Text */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    transition: transform 0.15s, box-shadow 0.2s;
+}
+
+.faq-item:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+}
+
+.faq-item h3 {
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+.faq-item p {
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+/* Icons */
+.fas {
+    color: #70e000; /* Accent Color */
+}
+
+/* Footer Section */
+.footer {
+    background-color: #007200; /* Footer Background */
+    padding: 10px 0;
+    border-top: 1px solid #004b23;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    max-width: 400px;
+}
+
+.footer nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.footer a {
+    text-decoration: none;
+    color: #ccff33; /* Light Text */
+    font-size: 14px;
+    transition: color 0.15s;
+}
+
+.footer a.active {
+    color: #70e000; /* Active Link Color */
+}
+
+.footer a:hover {
+    color: #b1df68; /* Hover Link Color */
+}
